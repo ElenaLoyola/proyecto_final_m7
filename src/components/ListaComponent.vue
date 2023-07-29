@@ -1,6 +1,6 @@
 <template>
   <div class="ListaComponent">
-    <h1>{{ titulo }}</h1>
+    <h3>{{ titulo }}</h3>
     <div id="contenedor-cards">
       <div class="tarjeta" v-for="curso in consultarNoCompletados" :key="curso.id">
         <b-card 
@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style scoped>
-  h1 {
+  h3 {
     margin: 30px;
   }
   #contenedor-cards {

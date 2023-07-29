@@ -1,6 +1,6 @@
 <template>
     <div id="AdministracionView">
-        <h1>Administración</h1>
+        <h3>Administración</h3>
         <b-button variant="primary" @click="modalShow = !modalShow">Agregar curso</b-button>
         <TablaComponent />
         <TotalesComponent />
@@ -150,7 +150,7 @@ export default {
 #AdministracionView {
     margin-top: 30px;
 }
-h1 {
+h3 {
     margin-bottom: 40px;
 }
 #btn2 {
