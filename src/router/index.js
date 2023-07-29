@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AdministracionView from '../views/AdministracionView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,16 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/administracion',
+    name: 'administracion',
+    component: AdministracionView
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'notfound',
+    component: NotFoundView
   },
   {
     path: '/about',
